@@ -20,10 +20,10 @@ function App() {
                          document.referrer.includes('android-app://'); // For Android
     setIsPWA(isStandalone);
 
-    // Simule un chargement initial
+    // Simule un chargement initial fluide
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 1200);
+    }, 1400);
 
     return () => clearTimeout(timer);
   }, []);
