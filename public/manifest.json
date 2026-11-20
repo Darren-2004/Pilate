@@ -12,9 +12,9 @@
   "categories": ["health", "fitness", "lifestyle"],
   "icons": [
     {
-      "src": "/favicon.svg",
+      "src": "/assets/logo.png",
       "sizes": "192x192",
-      "type": "image/svg+xml",
+      "type": "image/png",
       "purpose": "any"
     },
     {
@@ -24,7 +24,6 @@
       "purpose": "any"
     }
   ],
-  "screenshots": [],
   "shortcuts": [
     {
       "name": "Grille des tarifs",
