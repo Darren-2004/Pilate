@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="48" fill="#5C2C20" stroke="#FAF6F2" stroke-width="2"/>
+  <circle cx="50" cy="50" r="44" fill="none" stroke="#D9C3B4" stroke-width="1" stroke-dasharray="2,2"/>
+  <g fill="#FAF6F2" stroke="#5C2C20" stroke-width="0.5">
+    <!-- Center petal -->
+    <path d="M50 25 C47 38 47 54 50 64 C53 54 53 38 50 25 Z" fill="#FFFFFF"/>
+    <!-- Inner side petals -->
+    <path d="M50 33 C41 42 40 56 47 64 C48 57 48 44 50 33 Z" fill="#FBF7F4"/>
+    <path d="M50 33 C59 42 60 56 53 64 C52 57 52 44 50 33 Z" fill="#FBF7F4"/>
+    <!-- Outer petals -->
+    <path d="M48 42 C36 49 34 60 44 65 C45 60 46 51 48 42 Z" fill="#EFE3D8"/>
+    <path d="M52 42 C64 49 66 60 56 65 C55 60 54 51 52 42 Z" fill="#EFE3D8"/>
+    <!-- Low broad petals -->
+    <path d="M44 51 C30 56 30 66 42 67 C43 63 43 57 44 51 Z" fill="#DFCEBE"/>
+    <path d="M56 51 C70 56 70 66 58 67 C57 63 57 57 56 51 Z" fill="#DFCEBE"/>
+  </g>
+  <!-- Small decorative stars -->
+  <polygon points="50,18 51,21 54,21 51.5,23 52.5,26 50,24 47.5,26 48.5,23 46,21 49,21" fill="#EFE3D8"/>
+  <circle cx="28" cy="48" r="1.5" fill="#EFE3D8"/>
+  <circle cx="72" cy="48" r="1.5" fill="#EFE3D8"/>
+</svg>

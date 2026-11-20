@@ -1,0 +1,140 @@
+:root {
+  --cream: #FAF6F2;
+  --cream-card: #FFFFFF;
+  --cream-soft: #F5ECE4;
+  --ink: #2D1B17;
+  --muted: #6E5A53;
+
+  /* Signature Chocolate Brown & Earth Tones */
+  --chocolate: #5C2C20;
+  --chocolate-dark: #461F17;
+  --chocolate-light: #794939;
+  --caramel: #9C5B42;
+  --warm-sand: #D9C3B4;
+  --taupe: #887469;
+  --footer: #461F17;
+}
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: "Montserrat", "Inter", sans-serif;
+}
+
+.serif {
+  font-family: "Playfair Display", serif;
+  letter-spacing: .01em;
+}
+
+.brand-font {
+  font-family: "Cinzel", "Playfair Display", serif;
+  letter-spacing: .12em;
+}
+
+.logo-font {
+  font-family: "Cinzel", serif;
+  font-weight: 600;
+  letter-spacing: .18em;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.section-wrap {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  transition: background-color .25s ease, box-shadow .25s ease, backdrop-filter .25s ease;
+}
+
+.site-header.is-home.scrolled {
+  background: rgba(70, 31, 23, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px rgba(45, 18, 12, 0.25);
+}
+
+.site-header.not-home {
+  background: #5C2C20;
+  color: #FAF6F2;
+}
+
+.site-header.not-home.scrolled {
+  box-shadow: 0 8px 24px rgba(45, 18, 12, 0.2);
+  backdrop-filter: blur(6px);
+}
+
+/* HERO IMAGE: Pure clean background WITHOUT heavy overlay filter */
+.hero {
+  min-height: 640px;
+  background-image: url("https://cdn.prod.website-files.com/66f99d92b5830fbc4fe88d05/6862e8c9776adf05f7df5463_Saans%20Pilates%20Studio%20-%20Southfield%2C%20Michigan%20-1-p-2000.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* CARDS: Clean style with natural, balanced rounded corners */
+.pricing-card {
+  transition: transform .28s ease, box-shadow .28s ease;
+  position: relative;
+  border-radius: 0.75rem;
+}
+
+.pricing-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(92, 44, 32, 0.16);
+}
+
+.lift-card {
+  transition: transform .28s ease, box-shadow .28s ease;
+  border-radius: 0.75rem;
+}
+
+.lift-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 28px rgba(92, 44, 32, 0.12);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity .7s ease, transform .7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 767px) {
+  .hero {
+    min-height: 520px;
+  }
+}
+
+/* Slide up animation */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 0.3s ease-out forwards;
+}
+
+/* Hide scrollbar for clean horizontal video scroll */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

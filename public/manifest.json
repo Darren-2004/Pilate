@@ -1,0 +1,42 @@
+{
+  "name": "Aura Moon — Pilates Studio",
+  "short_name": "Aura Moon",
+  "description": "Aura Moon Pilates Studio à Yaoundé. Plus qu'un sport, une énergie durable. Réservez vos séances et packs bien-être.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF6F2",
+  "theme_color": "#5C2C20",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "fr",
+  "categories": ["health", "fitness", "lifestyle"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Grille des tarifs",
+      "short_name": "Tarifs",
+      "url": "/services",
+      "icons": []
+    },
+    {
+      "name": "Réserver une séance",
+      "short_name": "Réserver",
+      "url": "/contact",
+      "icons": []
+    }
+  ]
+}
