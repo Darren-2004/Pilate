@@ -21,8 +21,10 @@ export default function Header() {
     setMobileMenuOpen(false);
   }, [location.pathname]);
 
-  const baseHeaderClass = `site-header relative ${
-    isHome ? 'z-50' : 'bg-[#5C2C20] text-[#FAF6F2] z-50'
+  const baseHeaderClass = `site-header sticky top-0 z-50 transition-all duration-300 ${
+    isHome
+      ? (isScrolled ? 'bg-[#461F17]/95 backdrop-blur-md shadow-lg text-white' : 'bg-transparent text-white')
+      : 'bg-[#5C2C20] text-[#FAF6F2] shadow-md'
   }`;
   const scrolledClass = isScrolled ? (isHome ? 'is-home scrolled' : 'not-home scrolled') : '';
 
